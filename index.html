@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">KeySafeX</a>        
+          <ul >
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            
+          </ul>
+      </nav>
+    <div class="container">
+      <br> 
+        <h1>Password Manager</h1>
+        <p>"Welcome to the ultimate solution for safeguarding your digital life - our state-of-the-art Password Manager. In today's interconnected world, security is paramount, and our cutting-edge platform is designed to provide you with peace of mind. Say goodbye to the stress of managing countless passwords and the fear of unauthorized access. With our intuitive and user-friendly interface, you can effortlessly store, generate, and organize your passwords with military-grade encryption. Whether you're browsing the web, accessing sensitive documents, or managing important accounts, our Password Manager empowers you to do so with confidence and ease. Experience a new level of security today - join us in taking control of your online presence."</p>
+        <h2>Your Password</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Sr. #</th>
+              <th>Website</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Handle</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="dataBody"></tbody>
+        </table>
+        <h2>Add a Password </h2>
+        <form>
+          <div class="dataForm">
+            <label for="website"><b>Website:</b></label>
+            <input type="text" class="form-control" id="website" placeholder="enter website name">
+            <br>
+            <label for="username"><b>Username:</b></label>
+            <input type="email/text" class="form-control" id="username" placeholder="Enter email / Username">
+            <br>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <br>
+            <label for="socialMedia"><b>Social Media Handle:</b></label>
+            <input type="text" class="form-control" id="socialMedia" placeholder="Enter social media link">
+            <br>
+            <button type="submit" class="btn " onclick="addData()">Add Data</button>
+          </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
